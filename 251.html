@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nesting For Loops</title>
+</head>
+
+<body>
+    <h3>If you have a multi-dimensional array, you can use the same logic as the prior waypoint to loop through both the array and any sub-arrays. Here is an example: <br> var arr = [[1,2], [3,4], [5,6]]; <br>
+        <span>for (var i=0; i< arr.length; i++) { <br> </span>
+        <span>  for (var j=0; j< arr[i].length; j++) { <br> </span>
+        <span> console.log(arr[i][j]); <br> </span> } <br> } <br>
+        <span> This outputs each sub-element in arr one at a time. Note that for the inner loop, we are checking the .length of arr[i], since arr[i] is itself an array. Instructions Modify function multiplyAll
+        so that it multiplies the product variable by each number in the sub-arrays of arr</span> </h3>
+    <h4>Solution is in the
+        <em> console</em>
+    </h4>
+
+    <script>
+        function multiplyAll(arr) {
+            var product = 1;
+
+            for (var i = 0; i < arr.length; i++) {
+                for (var j = 0; j < arr[i].length; j++) {
+                    product = product * (arr[i][j]);
+                }
+            }
+            console.log(product);
+            return product;
+        }
+        multiplyAll([
+            [1, 2],
+            [3, 4],
+            [5, 6, 7]
+        ]);
+    </script>
+</body>
+
+</html>

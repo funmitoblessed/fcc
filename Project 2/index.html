@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Build a Personal Portfolio Webpage | freeCodeCamp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Offline bootstrap -->
+    <!-- <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- bootstrapcdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="200">
+
+    <!-- My Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid" style="padding-left: 13%; padding-right: 13%">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="https://github.com/ofunmito" target="_blank">funmitoblessed</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home" class="container-fluid">
+        <section id="top" class="jumbotron">
+            <h3 class="text-center" style="margin-bottom: 1em">Oluwafunmito B. Odefemi</h3>
+            <div class="row">
+                <div class="col-xs-8">
+                    <h3 class="text-center">I.T. Consultant. Web Developer. Educator.</h3>
+                    <hr class="titleSeparatorOne">
+                    <span class="text-center">Dedicated professional with over 5 years of experience in Information Technology. Specialties in IT technical support and consultancy, systems administration and management, and data analysis and management. Enjoys solving
+                    problems using technology, supporting the people who use it, and training them to understand how it works and how they can better leverage on technological tools to improve their day-to-day living.</span>
+                </div>
+                <div class="col-xs-4">
+                    <div><img src="./img/me.jpg" class="img-circle img-responsive" alt="Funmito's Picture"></div>
+                    <div class="caption text-center" style="padding-top: 1em">Oluwafunmito Blessed</div>
+                </div>
+            </div>
+        </section>
+        <hr class="menuSeparator">
+    </div>
+
+    <div id="portfolio" class="sectionPortfolio container-fluid">
+        <div class="jumbotron">
+            <h2 class="text-center">PORTFOLIO</h2>
+            <hr class="titleSeparatorTwo">
+
+            <div class="row portfolioParent">
+                <div class="col-xs-6 portfolio">
+                    <img src="./img/me.jpg" class="img-thumbnail img-responsive" alt="Portfolio">
+                </div>
+                <div class="col-xs-6 portfolio">
+                    <img src="./img/me.jpg" class="img-thumbnail img-responsive" alt="Portfolio">
+                </div>
+            </div>
+
+            <div class="row portfolioParent">
+                <div class="col-xs-6 portfolio">
+                    <img src="./img/me.jpg" class="img-thumbnail img-responsive" alt="Portfolio">
+                </div>
+                <div class="col-xs-6 portfolio">
+                    <img src="./img/me.jpg" class="img-thumbnail img-responsive" alt="Portfolio">
+                </div>
+            </div>
+
+            <div class="row portfolioParent">
+                <div class="col-xs-6 portfolio">
+                    <img src="./img/me.jpg" class="img-thumbnail img-responsive" alt="Portfolio">
+                </div>
+                <div class="col-xs-6 portfolio">
+                    <img src="./img/me.jpg" class="img-thumbnail img-responsive" alt="Portfolio">
+                </div>
+            </div>
+
+        </div>
+        <hr class="menuSeparator">
+    </div>
+
+
+    <div id="contact" class="sectionContact container-fluid">
+        <div class="jumbotron">
+            <div class="row" id="contactMe">
+                <h2 class="text-center">CONTACT ME</h2>
+                <hr class="titleSeparatorThree">
+                <div class="col-sm-6" style="padding-left: 10%;">
+                    <form class="form-group">
+                        <label for="name">Name: </label> <br>
+                        <input type="text" id="name" placeholder="Your Name" required="required"> <br>
+                        <label for="number">Number: </label> <br>
+                        <input type="text" id="number" placeholder="Phone Number" required="required"> <br>
+                        <label for="email">Email Address: </label> <br>
+                        <input type="email" id="email" placeholder="Email Address" required="required"> <br>
+                        <label for="message">Your message:</label> <br>
+                        <textarea id="message" rows="3" cols="20" required="required">
+                        </textarea> <br>
+                        <input type="submit" value="Submit" id="sendMessage">
+                    </form>
+                </div>
+                <div class="col-sm-6" style="padding-top: 2em">
+                    <span class="text-sm-right"> Want to get in touch with me? Be it to request more information about me or my experience, to ask for my resume, tips on how to best use technology, random questions about life, or perhaps just for some nice time together at your favorite hang out spot...
+                    feel free to drop me a message. I will get back to you as soon as possible. You can also reach out directly on Social Media.</span>
+                </div>
+            </div>
+        </div>
+        <hr class="menuSeparator">
+    </div>
+
+
+    <footer>
+        <div class="col-xs-12 footerAbove container-fluid">INTERACT WITH ME ONLINE
+            <div class="socialMedia">
+                <span>
+                <a class="button social" href="https://medium.com/@ooluwafunmito" target="_blank"><i class="fa fa-fw fa-medium fa-2x"></i></a>
+                </span>
+                <span>
+                    <a class="button social" href="https://ng.linkedin.com/in/ooluwafunmito" target="_blank"><i class="fa fa-fw fa-linkedin fa-2x"></i></a>
+                </span>
+                <span>
+                    <a class="button social" href="https://github.com/ofunmito" target="_blank"><i class="fa fa-fw fa-github fa-2x"></i></a>
+                </span>
+                <span>
+                <a class="button social" href="https://twitter.com/funmitoblessed" target="_blank"><i class="fa fa-fw fa-twitter fa-2x"></i></a>
+                </span>
+            </div>
+        </div>
+        <div class="footerBelow container-fluid text-center"> &copy; <a href="https://github.com/ofunmito" style="color: #fff" target="_blank">funmitoblessed</a>. 2018. All Rights Reserved.</div>
+    </footer>
+
+    <!-- CDN. Needs internet -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Offline jquery-3 -->
+    <!-- <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    <script src="./js/script.js" type="text/javascript"></script>
+    </div>
+</body>
+
+</html>
