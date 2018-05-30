@@ -76,7 +76,35 @@ for (var i = 0; i < contacts.length; i++) {
 
 
 /*
-// checks if the property exists
-if (contacts[i].hasOwnProperty("prop")) 
-	return contacts[i].prop;
+    Progress. 30-05-2018:12:51:00
+
+function lookUpProfile(firstName, prop) {
+   
+    //loop through all members of the contacts Object
+    for (var i = 0; i < contacts.length; i++) {
+        // check for all contacts to find the one with passed argument.
+        if (contacts[i].firstName === firstName) {
+            // return the passed in firstName argument
+//			return contacts[i].firstName
+                // check for which has the passed in prop argument. Still not working as expected. 
+				if (contacts[i].hasOwnProperty("prop") === true) {
+					return prop;
+			}
+        }
+    }
+}
+lookUpProfile("Kristian", "number");
+
+    Progress at 13:26:30
+function lookUpProfile(firstName, prop) {
+    // Only change code below this line
+
+    for (var i = 0; i < contacts.length; i++) {
+				if ((contacts[i].firstName === firstName) && (contacts[i].hasOwnProperty('likes'))) {
+						console.log(contacts[i].firstName + " likes " + contacts[i].likes);
+			}
+        }
+}
+lookUpProfile('Kristian', 'prop');
+
 */
